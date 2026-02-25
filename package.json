@@ -3,10 +3,10 @@
   "private": true,
   "packageManager": "pnpm@9.0.0",
   "scripts": {
-    "dev": "pnpm -C frontend dev",
+    "dev": "pnpm --dir frontend run dev",
     "test": "pnpm -C contracts test",
-    "build": "pnpm -C frontend build",
-    "lint": "pnpm -C frontend lint"
+    "build": "pnpm --dir frontend run build",
+    "preview": "pnpm --dir frontend run preview"
   },
   "devDependencies": {
     "@types/node": "^25.2.1",
